@@ -1,0 +1,328 @@
+/*
+Theme Name:		 chicdressing
+Theme URI:		 http://childtheme-generator.com/
+Description:	 chicdressing is a child theme of Ashe, created by ChildTheme-Generator.com
+Author:			 Chic Dressing
+Author URI:		 http://childtheme-generator.com/
+Template:		 ashe
+Version:		 1.0.0
+Text Domain:	 chicdressing
+*/
+
+
+/*
+    Add your custom styles here
+*/
+
+/* *************** POLICES **************** */
+
+/* open-sans-regular - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/open-sans-v44-latin-regular.woff2') format('woff2');
+}
+/* open-sans-italic - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('fonts/open-sans-v44-latin-italic.woff2') format('woff2');
+}
+/* open-sans-600 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('fonts/open-sans-v44-latin-600.woff2') format('woff2');
+}
+/* open-sans-600italic - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: url('fonts/open-sans-v44-latin-600italic.woff2') format('woff2');
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/open-sans-v44-latin-700.woff2') format('woff2');
+}
+/* open-sans-700italic - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url('fonts/open-sans-v44-latin-700italic.woff2') format('woff2');
+}
+
+/* playfair-display-regular - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/playfair-display-v40-latin-regular.woff2') format('woff2');
+}
+
+/* playfair-display-700 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/playfair-display-v40-latin-700.woff2') format('woff2');
+}
+
+/* kalam-regular - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/kalam-v18-latin-regular.woff2') format('woff2'); 
+}
+
+/* rokkitt-regular - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Rokkitt';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/rokkitt-v39-latin-regular.woff2') format('woff2'); 
+}
+
+body .page-content, .page-content select, .page-content input, .page-content textarea, .page-content .post-author a, .page-content .ashe-widget a, .page-content .comment-author {
+    color: #686868;
+    font-size: 12px;
+    min-width: 320px;
+}
+
+.page-content .post-date, .page-content .post-comments, .page-content .post-author, .page-content [data-layout*="list"] .post-author a, .page-content .related-post-date, .page-content .comment-meta a, .page-content .author-share a, .page-content .post-tags a, .page-content .tagcloud a, .widget_categories li, .widget_archive li, .ahse-subscribe-box p, .rpwwt-post-author, .rpwwt-post-categories, .rpwwt-post-date, .rpwwt-post-comments-number {
+    color: #686868 !important;
+}
+
+body .header-logo a{
+    color: white;
+    text-shadow: 2px 3px 5px #d0527a;
+    transform: rotate(-9deg);
+}
+.text-center{
+    text-align:center;
+}
+
+.chic-bouton{
+    display: inline-block; /* le padding compte dans la hauteur : l'espace sous le bouton est juste */
+    color: #ffffff;
+    background-color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 12px;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 14px;
+}
+
+#featured-slider{
+    margin-bottom:30px;
+}
+
+/* Slider : l'image est une vraie balise <img> qui remplit le bloc comme l'ancien fond */
+.slider-item-bg{
+    position: relative;
+    overflow: hidden;
+}
+.slider-item-bg .slider-item-img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#chic-products{
+    padding:0 40px;
+}
+
+.chic-title{
+    font-family: 'Kalam';
+    font-size: clamp(1.75rem, 1.3214rem + 2.1429vw, 3.25rem);
+    text-decoration: inherit;
+    text-transform: uppercase;
+    transform: rotate(-2deg);
+    /* margin:30px 40px; */ /*Remplacé par une marge en vw pour que le titre garde à peu près la même largeur sur l'écran */
+    margin: 2vw 3vw; /* les vw correspondent à un pourcentage de la largeur de l'écran */
+    text-align:center;
+    color: #9d4c64 !important;
+    line-height: 48px;
+}
+
+#chic-products ul.products li.product{
+    background: #f6f6f6;
+    padding-bottom: 20px;
+}
+
+.woocommerce .products ul,.woocommerce ul.products {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important;
+}
+
+/****** SIDE BAR ******/
+
+.aligncenter,
+div.aligncenter {
+    display: flex;
+    justify-content: center;
+}
+
+/******* MAIN MENU *******/
+
+#menu-item-990 a {
+    color: black !important;
+}
+
+#menu-item-990 a:hover {
+    color: #c98622 !important;
+}
+
+/******* DERNIERES PIECES *******/
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
+    font-size: clamp(1rem, 0.7697rem + 0.9211vw, 1.4375rem) !important;
+    padding: 0 10px 6px 10px !important;
+}
+
+/* *************** ICÔNES (Font Awesome réduit) **************** */
+/* Seules les icônes utilisées sur le site sont gardées dans la police (1 Ko au lieu de 153 Ko) */
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('fonts/fa-solid-chic.woff2') format('woff2');
+}
+.fa-solid, .fas {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-magnifying-glass::before { content: "\f002"; }
+.fa-xmark::before { content: "\f00d"; }
+.fa-chevron-down::before { content: "\f078"; }
+.fa-chevron-up::before { content: "\f077"; }
+.fa-chevron-left::before { content: "\f053"; }
+.fa-chevron-right::before { content: "\f054"; }
+.fa-angle-up::before { content: "\f106"; }
+.fa-angle-down::before { content: "\f107"; }
+.fa-angle-left::before { content: "\f104"; }
+.fa-angle-right::before { content: "\f105"; }
+.fa-bars::before { content: "\f0c9"; }
+.fa-cart-shopping::before { content: "\f07a"; }
+
+/* *************** PRODUITS DE L'ACCUEIL EN RESPONSIVE **************** */
+/* Les « faux » éléments de WooCommerce (clearfix) ne doivent pas compter comme des cases */
+#chic-products ul.products::before,
+#chic-products ul.products::after {
+    display: none !important;
+}
+
+@media (max-width: 767px) {
+    #chic-products {
+        padding: 0 16px;
+    }
+    /* 2 produits par ligne, de même largeur */
+    #chic-products ul.products {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px !important;
+    }
+    /* #chic-products : plus prioritaire que la largeur fixe (32 % !important) du thème Ashe */
+    #chic-products ul.products li.product {
+        width: auto !important;
+        margin: 0 !important;
+        float: none !important;
+    }
+    #chic-products ul.products li.product .button {
+        font-size: 11px;
+        letter-spacing: 1px;
+        padding: 10px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* 1 produit par ligne sur petit téléphone : image et titre lisibles */
+    #chic-products ul.products {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* *************** ESPACEMENTS DE L'ACCUEIL **************** */
+/* Même espace au-dessus de chaque titre de section : 100 px (ordinateur), 70 px (mobile).
+   L'espace est porté par la section du dessus, le titre n'a plus de marge en haut. */
+.home .chic-title {
+    margin-top: 0;
+}
+#featured-slider {
+    margin-bottom: 100px;
+}
+#chic-products ul.products {
+    margin-bottom: 0;
+}
+#chic-products .text-center {
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+#chic-products {
+    margin-bottom: 100px;
+}
+#chic-fashionweek-map {
+    margin-top: 0 !important; /* annule le margin-top: 30px écrit dans index.php */
+    margin-bottom: 48px;      /* + 40 px de marge haute du bloc des articles + 12 px ci-dessous = 100 px */
+}
+/* Le bloc des articles coupe ce qui dépasse (overflow: hidden) : le titre penché
+   avait le haut de ses lettres coupé. 12 px de marge intérieure lui laissent la place. */
+#leblog {
+    padding-top: 12px;
+}
+#chic-fashionweek-map iframe {
+    display: block;           /* supprime l'espace fantôme sous l'iframe */
+}
+
+@media (max-width: 767px) {
+    #featured-slider,
+    #chic-products {
+        margin-bottom: 70px;
+    }
+    #chic-products .text-center {
+        margin-top: 28px;
+    }
+    #chic-fashionweek-map {
+        margin-bottom: 18px;  /* + 40 px + 12 px = 70 px */
+    }
+    .chic-title {
+        margin-bottom: 24px;
+    }
+}
