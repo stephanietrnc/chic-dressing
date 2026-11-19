@@ -265,5 +265,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3
 Mise en cache de page à l’aide de Disk: Enhanced (Requested URI contains query) 
 Minified using Disk
 
-Served from: chic-dressing.local @ 2026-11-19 09:12:59 by W3 Total Cache
+Served from: chic-dressing.local @ 2026-11-19 10:41:46 by W3 Total Cache
 -->
