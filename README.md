@@ -36,13 +36,14 @@ Mobile : LCP de 49,5 s à 3,5 s environ. Accessibilité de 88 à 96. SEO 100 (ho
 
 - Slider : vraies images (`<img>` + `srcset`) au lieu de fonds CSS, la première chargée en priorité
 - Image d'en-tête à la bonne taille selon l'écran, et préchargée
-- Vignettes produits nettes (bonne taille annoncée au navigateur) et chargées en différé
+- Photos produits nettes, en vignette comme sur la page produit (bonne taille annoncée au navigateur), vignettes chargées en différé
 - Font Awesome réduit aux icônes utilisées : 1 Ko au lieu de 250 Ko (CSS + police)
 - CSS combiné : 19 fichiers bloquants ramenés à 3, et CSS inutile retiré de l'accueil (boutons de partage, blocs WooCommerce) : environ 100 Ko en moins
 - Script des émojis WordPress retiré
 - Accessibilité : repère `<main>`, liens sans nom corrigés, liste HTML valide
 - Responsive : grille des produits sur mobile, espacements réguliers entre les sections
 - Liens corrigés : « Voir tous les articles » menait à une page inexistante, « Le blog » renvoie à la section des articles
+- Contenu de démo du thème nettoyé : galerie aux images manquantes et image chargée depuis un site externe
 
 ## Structure
 

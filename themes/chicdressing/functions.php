@@ -106,6 +106,11 @@ add_filter( 'wp_get_attachment_image_attributes', function ( $attr, $attachment,
             }
         }
     }
+    // Page produit : WooCommerce annonçait 600 px alors que la photo s'affiche en ~1100 px,
+    // donc le navigateur prenait la version 600 px (pixelisée). On donne la vraie largeur.
+    if ( 'woocommerce_single' === $size ) {
+        $attr['sizes'] = '(max-width: 1160px) 100vw, 1140px';
+    }
     return $attr;
 }, 10, 3 );
 
