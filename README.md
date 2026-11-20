@@ -43,7 +43,8 @@ Mobile : LCP de 49,5 s à 3,5 s environ. Accessibilité de 88 à 96. SEO 100 (ho
 - Accessibilité : repère `<main>`, liens sans nom corrigés, liste HTML valide
 - Responsive : grille des produits sur mobile, espacements réguliers entre les sections
 - Liens corrigés : « Voir tous les articles » menait à une page inexistante, « Le blog » renvoie à la section des articles
-- Contenu de démo du thème nettoyé : galerie aux images manquantes et image chargée depuis un site externe
+- Contenu de démo du thème nettoyé : galerie aux images manquantes, image chargée depuis un site externe, code de formulaire affiché sur la page Contact
+- Formulaires et métadonnées : case à cocher des commentaires et nom de l'auteur alignés (une largeur minimale de 320 px les décalait)
 
 ## Structure
 

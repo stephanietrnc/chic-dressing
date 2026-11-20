@@ -104,7 +104,6 @@ Text Domain:	 chicdressing
 body .page-content, .page-content select, .page-content input, .page-content textarea, .page-content .post-author a, .page-content .ashe-widget a, .page-content .comment-author {
     color: #686868;
     font-size: 12px;
-    min-width: 320px;
 }
 
 .page-content .post-date, .page-content .post-comments, .page-content .post-author, .page-content [data-layout*="list"] .post-author a, .page-content .related-post-date, .page-content .comment-meta a, .page-content .author-share a, .page-content .post-tags a, .page-content .tagcloud a, .widget_categories li, .widget_archive li, .ahse-subscribe-box p, .rpwwt-post-author, .rpwwt-post-categories, .rpwwt-post-date, .rpwwt-post-comments-number {
@@ -326,3 +325,8 @@ div.aligncenter {
         margin-bottom: 24px;
     }
 }
+
+/* Commentaires : case « Enregistrer mon nom… » alignée à gauche de sa phrase */
+.comment-form-cookies-consent { display: flex; align-items: flex-start; gap: 8px; }
+.comment-form-cookies-consent input { flex: none; margin-top: 6px; }
+.comment-form-cookies-consent label { margin: 0; }
